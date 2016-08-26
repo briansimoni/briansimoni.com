@@ -1,0 +1,132 @@
+/*
+Theme Name: Simoni Theme
+Author: Brian Simoni
+Author URI: briansimoni.com
+Description: I made this theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#content {
+    padding-bottom: 250px; /* Height of the footer element */
+}
+
+.icon-bar {
+    background-color: #0e6eb0;
+}
+
+/* HEADER */
+#header {
+
+    background: #2e2e2e;
+}
+
+#header img {
+    height: 121px;
+    width: 121px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#header a {
+    color: #6e9dd1;
+}
+
+#header .container {
+    position: relative;
+}
+
+#header nav {
+    margin-bottom: 0;
+    border: none;
+}
+
+#header .navbar-collapse {
+    margin-top: 75px;
+}
+
+#header button {
+    margin-top: 65px;
+    border: none;
+}
+
+
+#header .breadcrumbs {
+    color: white;
+    background-color: gray;
+    display: none;
+}
+
+#header ul {
+    margin: 14px 0;
+}
+
+#header li {
+    text-decoration: underline;
+}
+
+#header li:last-of-type {
+    text-decoration: none;
+}
+
+/*END HEADER */
+
+/* FOOTER */
+
+#footer {
+
+    background: #626262;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 10px solid #858585;
+}
+
+#footer .legal {
+    margin: 0;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow-x: hidden;
+}
+#wrapper {
+    min-height:100%;
+    position:relative;
+}
+#content {
+    padding-bottom:250px; /* Height of the footer element */
+}
+
+.icon-bar {
+    background-color: #0e6eb0;
+}
