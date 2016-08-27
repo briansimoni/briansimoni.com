@@ -44,7 +44,7 @@ get_header();
 
     <?php
     global $wpdb;
-    $latest_posts = $wpdb->get_results("SELECT * FROM test.wp_posts WHERE post_type = 'computer-science' 
+    $latest_posts = $wpdb->get_results("SELECT * FROM wp_posts WHERE post_type = 'computer-science' 
                                       OR post_type = 'fire-and-ems' OR post_type = 'software-development' ORDER BY post_date;");
 
     $last = count($latest_posts) - 1;
