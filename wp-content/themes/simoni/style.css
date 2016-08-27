@@ -48,6 +48,18 @@ body {
     max-height: 200px;
 }
 
+@media (max-width:996px) {
+    #logo {
+        max-height: 130px;
+    }
+}
+
+@media (max-width:768px) {
+    #logo {
+        max-height: 100px;
+    }
+}
+
 #header a {
     color: #6e9dd1;
 }
