@@ -10,20 +10,16 @@ get_header();
 
 // do some other stuff
 ?>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"><img src="http://placehold.it/200x200"></div>
+        <div class="col-md-4"><img src="http://placehold.it/200x200"></div>
+        <div class="col-md-4"><img src="http://placehold.it/200x200"></div>
+    </div>
+</div>
 
-<h1>This is the website that I am making</h1>
-<h4>Things to do still</h4>
-<ul>
-    <li>Create custom post types</li>
-    <ul>
-        <li>Computer Science</li>
-        <li>Fire and EMS</li>
-        <li>Software Development</li>
-    </ul>
-    <li>Style the pages</li>
-    <li>Put on the internet</li>
-    <li>Buy domain name</li>
-</ul>
+
+
 <?php
 
 get_footer();

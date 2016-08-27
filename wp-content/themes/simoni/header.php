@@ -15,12 +15,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <title>Brian Simoni</title>
-
-
-<!--    <link href="styles/national.css" rel="stylesheet">-->
-<!--    <link href="styles/styles.css" rel="stylesheet">-->
     <?php wp_head(); ?>
 
 </head>
@@ -32,7 +29,8 @@
 
     <div id="header">
         <div class="container">
-            <img src="images/imconnectlogo.png">
+            <img src="wp-content/themes/simoni/bsimoni.png">
+<!--            <h1>Brian Simoni</h1>-->
 
             <nav class="navbar navbar-light bg-faded pull-right">
                 <div class="container-fluid">

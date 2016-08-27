@@ -17,6 +17,7 @@ body {
     padding: 0;
     height: 100%;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 #wrapper {
@@ -35,14 +36,13 @@ body {
 /* HEADER */
 #header {
 
-    background: #2e2e2e;
+    background: #1e1f22;
 }
 
-#header img {
-    height: 121px;
-    width: 121px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+#header h1 {
+    color: white;
+    position: absolute;
+    bottom: 30px;
 }
 
 #header a {
