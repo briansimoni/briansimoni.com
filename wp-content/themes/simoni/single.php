@@ -1,22 +1,31 @@
 <?php
 /**
- * The template for displaying all single posts and attachments
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * Created by PhpStorm.
+ * User: brian
+ * Date: 8/26/16
+ * Time: 1:55 PM
  */
 
-get_header(); ?>
+get_header();
 
-<div id="primary" class="content-area">
-    <?php global $post;
-
-    echo "<h1>" . $post->post_title . "</h1>";
+global $post;
 
 
+?>
 
-    ?>
-</div><!-- .content-area -->
+    <div id="content" class="single-post">
+        <div class="container">
+            <h1 id="post-title"><?php echo $post->post_title ?></h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <?php the_post_thumbnail() ?>
+                </div>
+                <div class="cold-md-8">
+                    <p><?php echo $post->post_content ?></p>
+                </div>
+            </div>
+            <?php comments_template(); ?>
+        </div>
+    </div>
 
 <?php get_footer(); ?>

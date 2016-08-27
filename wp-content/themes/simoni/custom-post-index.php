@@ -7,6 +7,7 @@
  */
 get_header();
 
+// I made this function so that I didn't have to create other template files based on custom post types
 function find_post_type() {
     $url = parse_url( $_SERVER['REQUEST_URI']);
     switch ( $url['path'] ) {
@@ -29,21 +30,28 @@ function find_post_type() {
 
 $args = array('post_type' => find_post_type() );
 
-//Define the loop based on arguments
+$loop = new WP_Query( $args );?>
 
-echo "<h1>test</h1>";
-
-$loop = new WP_Query( $args );
-
-//Display the contents
-
-while ( $loop->have_posts() ) : $loop->the_post();
+<div id="content" class="container">
+<?php while ( $loop->have_posts() ) : $loop->the_post();
     global $post
     ?>
-    <h1 class="entry-title"><a href="<?php echo $post->guid ?>"><?php the_title(); ?></a></h1>
-    <div class="entry-content">
-        <?php the_content(); ?>
+
+    <div class="post">
+        <div class="row">
+            <div class="col-xs-12"><a href="<?php echo $post->guid ?>"><h2><?php echo $post->post_title ?></h2></a></div>
+        </div>
+        <div class="row">
+            <!-- todo conditionals for content existing -->
+
+            <div class="col-md-4"><?php the_post_thumbnail() ?></div>
+            <div class="col-md-8">
+                <p><?php echo $post->post_excerpt ?></p>
+                <p class="read-more"><a href="<?php echo $post->guid ?>">read more</a></p>
+            </div>
+        </div>
     </div>
 <?php endwhile;?>
+</div>
 
 <?php get_footer() ?>
