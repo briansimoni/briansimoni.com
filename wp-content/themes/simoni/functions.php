@@ -23,7 +23,102 @@ function simoni_theme_setup() {
         'social'  => __( 'Social Links Menu', 'twentysixteen' ),
     ) );
 
+    add_theme_support( 'post-thumbnails' );
+
 }
 
 
 add_action( 'after_setup_theme', 'simoni_theme_setup' );
+
+
+
+function create_computer_science_post_type() {
+    register_post_type( 'computer-science',
+        array(
+            'labels' => array(
+                'name' => __( 'ComputerScience' ),
+                'singular_name' => __( 'ComputerScience' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+        )
+    );
+
+    $labels = array(
+        'name' => __( 'Computer Science' ),
+        'singular_name' => __( 'Computer Science' )
+    );
+
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'author',
+            'thumbnail',
+            'excerpt',
+            'comments',
+        )
+    );
+
+    register_post_type( 'computer-science', $args );
+}
+add_action( 'init', 'create_computer_science_post_type' );
+
+
+function create_software_development_post_type() {
+
+    $labels = array(
+        'name' => __( 'Software Development' ),
+        'singular_name' => __( 'Software Development' )
+    );
+
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'author',
+            'thumbnail',
+            'excerpt',
+            'comments',
+        )
+    );
+
+    register_post_type( 'software-development', $args );
+}
+add_action( 'init', 'create_software_development_post_type' );
+
+
+
+function create_fire_and_ems_post_type() {
+
+    $labels = array(
+        'name' => __( 'Fire and EMS' ),
+        'singular_name' => __( 'Fire and EMS' )
+    );
+
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'author',
+            'thumbnail',
+            'excerpt',
+            'comments',
+        )
+    );
+
+    register_post_type( 'fire-and-ems', $args );
+}
+add_action( 'init', 'create_fire_and_ems_post_type' );
