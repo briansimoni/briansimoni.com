@@ -35,14 +35,17 @@ body {
 
 /* HEADER */
 #header {
-
-    background: #1e1f22;
+    background: #020629;;
 }
 
 #header h1 {
     color: white;
     position: absolute;
     bottom: 30px;
+}
+
+#logo {
+    max-height: 200px;
 }
 
 #header a {
@@ -79,26 +82,87 @@ body {
 }
 
 #header li {
-    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#header li a {
+    color: white;
+}
+
+#header li a:hover {
+    background-color: initial;
+    color: #093cb7;
+    transition: all .4s;
 }
 
 #header li:last-of-type {
     text-decoration: none;
 }
 
-/*END HEADER */
+/*CONTENT*/
+#content {
+    margin-top: 75px;
+}
+
+#content img {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: all .4s;
+}
+
+.section-3-pictures img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-3-pictures p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#content img:hover {
+    box-shadow: 0 27px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22);
+}
+
+.latest-post-div {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.latest-post-div h2 {
+    text-align: center;
+}
 
 /* FOOTER */
 
 #footer {
 
-    background: #626262;
+    background: #aaaaaa;
     width: 100%;
     height: 250px;
     position: absolute;
     bottom: 0;
     left: 0;
     border-top: 10px solid #858585;
+}
+
+#footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+
+#footer .col-xs-4:first-of-type img {
+    margin-right: 0;
+}
+
+#footer .col-xs-4:last-of-type img  {
+    margin-left: 0;
 }
 
 #footer .legal {
@@ -110,23 +174,4 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
-}
-
-html,
-body {
-    margin:0;
-    padding:0;
-    height:100%;
-    overflow-x: hidden;
-}
-#wrapper {
-    min-height:100%;
-    position:relative;
-}
-#content {
-    padding-bottom:250px; /* Height of the footer element */
-}
-
-.icon-bar {
-    background-color: #0e6eb0;
 }

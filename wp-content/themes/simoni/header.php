@@ -29,7 +29,7 @@
 
     <div id="header">
         <div class="container">
-            <img src="wp-content/themes/simoni/bsimoni.png">
+            <a href="/"><img id="logo" src="/wp-content/themes/simoni/images/koalalogo.png"></a>
 <!--            <h1>Brian Simoni</h1>-->
 
             <nav class="navbar navbar-light bg-faded pull-right">

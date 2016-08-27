@@ -11,9 +11,17 @@
 <div id="footer">
     <?php wp_footer() ?>
 
-    <a href="http://google.com">G+</a>
-    <a href="http://google.com">LinkedIn</a>
-    <a href="http://google.com">Facebook</a>
+    <div class="row">
+        <div class="col-xs-4">
+            <img src="/wp-content/themes/simoni/images/linkedin-icon.png">
+            </div>
+        <div class="col-xs-4">
+            <img src="/wp-content/themes/simoni/images/github.png">
+            </div>
+        <div class="col-xs-4">
+            <img src="/wp-content/themes/simoni/images/fb.png">
+            </div>
+    </div>
 
     <div class="row legal">
         <div class="col-md-12">
