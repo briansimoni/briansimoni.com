@@ -44,7 +44,7 @@ $loop = new WP_Query( $args );?>
         <div class="row">
             <!-- todo conditionals for content existing -->
 
-            <div class="col-md-4"><?php the_post_thumbnail() ?></div>
+            <div class="col-md-4 post-image"><?php the_post_thumbnail() ?></div>
             <div class="col-md-8">
                 <p><?php echo $post->post_excerpt ?></p>
                 <p class="read-more"><a href="<?php echo $post->guid ?>">read more</a></p>
