@@ -157,6 +157,11 @@ body {
     font-size: 18px;
 }
 
+.single-post {
+    max-width: 300px;
+    max-height: 300px;
+}
+
 .single-post p {
     font-size: 18px;
 }
