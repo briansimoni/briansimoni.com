@@ -157,7 +157,7 @@ body {
     font-size: 18px;
 }
 
-.single-post {
+.single-post img{
     max-width: 300px;
     max-height: 300px;
 }
