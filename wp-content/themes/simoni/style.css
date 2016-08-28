@@ -410,22 +410,16 @@ body {
 
 .comment-reply-title small a {
     border: 0;
-    float: right;
     height: 32px;
     overflow: hidden;
     width: 26px;
+    margin-left: 30px;
+    font-weight: 700;
 }
 
 .comment-reply-title small a:hover,
 .comment-reply-title small a:focus {
     color: #1a1a1a;
-}
-
-.comment-reply-title small a:before {
-    content: "\f405";
-    font-size: 32px;
-    position: relative;
-    top: -5px;
 }
 
 .comment-body p{
