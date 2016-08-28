@@ -21,7 +21,9 @@ global $post;
             <div class="row">
 
                 <div class="col-md-4">
-                    <?php the_post_thumbnail() ?>
+                    <div class="post-image">
+                        <?php the_post_thumbnail() ?>
+                    </div>
                 </div>
 
                 <div class="col-md-8">

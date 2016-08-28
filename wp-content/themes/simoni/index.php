@@ -70,9 +70,11 @@ get_header();
 
         <div class="row">
             <div class="col-md-4">
-                <a href="<?php echo $most_recent_post->guid ?>">
-                    <?php echo get_the_post_thumbnail( $most_recent_post ) ?>
-                </a>
+                <div class="post-image">
+                    <a href="<?php echo $most_recent_post->guid ?>">
+                        <?php echo get_the_post_thumbnail( $most_recent_post ) ?>
+                    </a>
+                </div>
             </div>
             <div class="col-md-8"><p><?php echo $most_recent_post->post_excerpt ?></p></div>
         </div>
