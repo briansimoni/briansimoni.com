@@ -169,6 +169,7 @@ body {
 .single-post img {
     max-width: 100%;
     height: auto;
+    margin: 25px 0;
 }
 
 #comments {
