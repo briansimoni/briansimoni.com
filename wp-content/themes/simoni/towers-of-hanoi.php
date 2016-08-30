@@ -299,7 +299,6 @@ get_header(); ?>
         <p>hanoi(3,'A', 'C', 'B');</p>
 
         <pre>
-        <code>
             move disk from A to C
             move disk from A to B
             move disk from C to B
@@ -307,8 +306,7 @@ get_header(); ?>
             move disk from B to A
             move disk from B to C
             move disk from A to C
-        </code>
-    </pre>
+        </pre>
     </div>
 </div>
 
