@@ -32,7 +32,7 @@
 
 </div><!-- #wrapper -->
 
-
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>

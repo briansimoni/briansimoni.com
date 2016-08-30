@@ -9,7 +9,9 @@
 function simoni_styles() {
     wp_enqueue_script("simoni-js", get_stylesheet_directory_uri() . "/js/jquery-3.1.0.min.js");
     wp_enqueue_script("bootstrap-js", get_stylesheet_directory_uri() . "/js/bootstrap-3.3.7-dist/js/bootstrap.min.js");
+    wp_enqueue_script("hightlight-js", get_stylesheet_directory_uri() . "/js/highlight.pack.js");
 
+    wp_enqueue_style("highlight-monokai-sublime", get_stylesheet_directory_uri() . "/stylesheets/monokai-sublime.css");
     wp_enqueue_style("bootstrap", get_stylesheet_directory_uri() . "/js/bootstrap-3.3.7-dist/css/bootstrap.min.css");
     wp_enqueue_style("simoni", get_stylesheet_directory_uri() . "/style.css");
 }
