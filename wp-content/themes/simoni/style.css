@@ -35,7 +35,7 @@ body {
 
 /* HEADER */
 #header {
-    background: #020629;;
+    background: #020629;
 }
 
 #header h1 {
@@ -62,6 +62,10 @@ body {
 
 #header a {
     color: #6e9dd1;
+}
+
+#header .nav>li>a:focus {
+    background-color: #020629;
 }
 
 #header .container {
