@@ -25,7 +25,8 @@
 
     <div class="row legal">
         <div class="col-md-12">
-            <p>2016 Brian Simoni Theme</p>
+            <!-- hidden link -->
+            <p><a href="/resume">2016 Brian Simoni Theme</a></p>
         </div>
     </div>
 </div><!-- #footer -->
