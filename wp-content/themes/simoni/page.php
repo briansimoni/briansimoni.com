@@ -8,7 +8,25 @@
 
 get_header();
 
-echo "<h1>This should be a page.php thing</h1>";
+global $post;
 
 
-get_footer();
+?>
+
+    <div id="content" class="single-post">
+        <div class="container">
+
+            <h1 id="post-title"><?php echo $post->post_title ?></h1>
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <p><?php echo $post->post_content ?></p>
+                </div>
+
+            </div>
+            <?php comments_template(); ?>
+        </div>
+    </div>
+
+<?php get_footer(); ?>
