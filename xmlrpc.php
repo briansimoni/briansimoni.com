@@ -10,6 +10,10 @@
  *
  * @var bool
  */
+
+// temporary fix while I change firewall/ip settings.
+exit('leave me alone idiots!');
+
 define('XMLRPC_REQUEST', true);
 
 // Some browser-embedded clients send cookies. We don't want them.
