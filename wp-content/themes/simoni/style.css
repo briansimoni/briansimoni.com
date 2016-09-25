@@ -162,8 +162,8 @@ body {
 }
 
 .post-image img{
-    max-width: 300px;
-    max-height: 300px;
+    height: auto;
+    width: 100%;
 }
 
 .single-post p {
