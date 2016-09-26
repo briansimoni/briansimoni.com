@@ -161,6 +161,10 @@ body {
     font-size: 18px;
 }
 
+#accordion p{
+    font-size: 14px;
+}
+
 .post-image img{
     height: auto;
     width: 100%;
