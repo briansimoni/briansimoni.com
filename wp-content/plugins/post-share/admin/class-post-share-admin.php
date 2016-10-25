@@ -159,7 +159,7 @@ class Post_Share_Admin {
     public function validate($input) {
         $valid = array();
         
-        $type = 'post';
+        $type = 'any';
         $args=array(
         'post_type' => $type,
         'post_status' => 'publish',
