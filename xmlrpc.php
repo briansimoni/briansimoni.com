@@ -10,10 +10,6 @@
  *
  * @var bool
  */
-
-// temporary fix while I change firewall/ip settings.
-exit('leave me alone idiots!');
-
 define('XMLRPC_REQUEST', true);
 
 // Some browser-embedded clients send cookies. We don't want them.
@@ -65,7 +61,7 @@ exit;
 
 include_once(ABSPATH . 'wp-admin/includes/admin.php');
 include_once(ABSPATH . WPINC . '/class-IXR.php');
-include_once(ABSPATH . WPINC . '/class-wp-xmlrpc-server.php');
+include_once(ABSPATH . WPINC . '/class-wp-xmlrpc-server.php'); 
 
 /**
  * Posts submitted via the XML-RPC interface get that title
