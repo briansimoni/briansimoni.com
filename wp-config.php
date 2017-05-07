@@ -1,3 +1,6 @@
+ubuntu@ip-172-31-22-247:/var/www/briansimoni.com$ cat wp-config
+wp-config.php         wp-config-sample.php
+ubuntu@ip-172-31-22-247:/var/www/briansimoni.com$ cat wp-config.php
 <?php
 /**
  * The base configuration for WordPress
@@ -20,7 +23,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'test');
+define('DB_NAME', 'bsimoni');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -80,13 +83,13 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+    define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
