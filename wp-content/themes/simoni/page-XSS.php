@@ -10,6 +10,14 @@ get_header();
 
 <div id="content">
     <div class="container">
+        <ol>
+            <li>In another tab open <a href="https://passwords.briansimoni.com">passwords.briansimoni.com</a> and login</li>
+            <li>Come back to this page and click the red button</li>
+            <li>The cookie on the page will update because you got pwned by an XSS attack</li>
+            <li>On another computer, or browser, or incognito tab, go to passwrods.briansimoni.com/secrets</li>
+            <li>Set <code>document.cookie = 'cookie that was stolen'</code></li>
+            <li>Refresh the page</li>
+        </ol>
         <?php
         ?>
 
