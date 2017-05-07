@@ -31,7 +31,7 @@ get_header();
         echo $post->post_content;
         $post->post_content;
         if(isset($_GET['pwned'])) {
-            $post->post_content = $_GET['pwned'];
+            $post->post_content = sanitize_text_field($_GET['pwned']);
             wp_update_post($post);
         }
 
