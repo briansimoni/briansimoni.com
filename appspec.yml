@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/wp-content/themes
+
+permissions:
+  owner: ec2-user
+  group: apache
+
+hooks:
+  # BeforeInstall:
+  #   - location: scripts/date.sh
+  #     timeout: 10
+  #     runas: root
+
+  AfterInstall:
+    - location: scripts/permissions.sh
+      timeout: 15
+      runas: root
